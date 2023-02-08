@@ -67,7 +67,9 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | *Azure Service Bus*   |   Basic      |        0.05 USD      |
 | *Azure Web App*   |     Basic B1      |      12.41 USD        |
 | *Azure function App*   |     Basic B1    |        12.41 USD      |
-| *total cost*   |     N/A    |       75.01 USD       |
+| *Total cost*   |     N/A    |       75.01 USD       |
 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+
+For both Azure Web App and Azure Function the cost was the same and reasnable for these two azure resources. The configuration was Since The solution was split into sending emails and the app itselt, using Azure web app and placing the sending emails on the background process. Also, using Azure web app improves the cost-effecient because we don't need to scale up since it's a small application. The only issue affecting the cost in this project was using the postgreSQL.
