@@ -35,7 +35,7 @@ def main(msg: func.ServiceBusMessage):
         # TODO: Get attendees email and name
         sql_attend='SELECT email, first_name FROM attendee'
         cur.execute(sql_attend)
-        sql_attendees = cur.fetchall
+        sql_attendees = cur.fetchall()
 
         # TODO: Loop through each attendee and send an email with a personalized subject
         for attendee in sql_attendees:
