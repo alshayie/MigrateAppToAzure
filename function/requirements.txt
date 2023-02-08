@@ -1,0 +1,4 @@
+
+azure-functions
+psycopg2-binary==2.9.5
+sendgrid==6.9.7
